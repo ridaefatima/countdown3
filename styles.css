@@ -1,0 +1,108 @@
+/* Existing styles */
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#countdown {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    position: fixed;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer div {
+    margin: 0 15px;
+    margin-bottom: -10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer span {
+    display: block;
+}
+
+#timer span:first-child {
+    font-size: 38px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#timer span:last-child {
+    font-size: 18px;
+    color: darkblue;
+}
+
+#heading {
+    color: darkblue;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+#Date {
+    font-size: 23px;
+    color: rgb(20, 157, 175);
+}
+
+.highlight {
+    color: rgb(20, 157, 175);
+}
+
+.new {
+    color: darkblue;
+}
+
+/* Responsive background */
+.bg {
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking */
+    align-items: center;   /* Center horizontally */
+    justify-content: top; /* Center vertically */
+    background: url('Capture2.PNG') no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    overflow: hidden; /* Hide any overflow */
+}
+
+.grey{
+
+color: grey;
+
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .bg {
+        background-position: center center; /* Center the image */
+        background-size: contain; /* Ensure it covers the element */
+    }
+}
+
+@media (max-width: 480px) {
+    .bg {
+        background-position: center center; /* Center the image */
+        background-size: contain; /* Ensure it covers the element */
+    }
+}
